@@ -8,6 +8,13 @@
     text-decoration: none;
 }
 
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --text-color: white;
+    --background-color: #34495e;
+}
+
 /* HEADER */
 .cabecalho-principal{
     display: flex;
@@ -24,7 +31,7 @@
 .cabecalho-principal a{
     font-family: "Telex", serif;
     font-weight: 400;
-    color: white;
+    color: var(--text-color);
 }
 
 /* MAIN */
