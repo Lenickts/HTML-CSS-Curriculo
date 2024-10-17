@@ -10,11 +10,10 @@
 
 :root{
     --primary-color: #3498db;
-    --secondary-color: #2980b9;
+    --secondary-color: #a2a7aa;
     --text-color: white;
     --background-color: #34495e;
 }
-
 /* HEADER */
 .cabecalho-principal{
     display: flex;
@@ -32,6 +31,18 @@
     font-family: "Telex", serif;
     font-weight: 400;
     color: var(--text-color);
+    text-decoration: none;
+}
+.cabecalho-principal ul li:hover{
+    background-color: var(--secondary-color);
+}
+.cabecalho-principal ul li a{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.cabecalho-principal ul li a i:hover{
+    transform: translateX(5px) rotate(5deg);
 }
 
 /* MAIN */
@@ -90,4 +101,33 @@ h5{
 #email{
     font-family: "Inconsolata", monospace;
     font-style: italic;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 300px) and (max-width: 800px){
+    .cabecalho-principal{
+        position: fixed;
+        right: -500px;
+        top: 0;
+        width: 500px;
+        height: 100%;
+        background-color: var(--background-color);
+        z-index: 99;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .cabecalho-principal.ativo{
+        right: 0;
+    }
+    .cabecalho-principal ul{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 60px; /*REVER ESSA CONFIG*/
+        flex-direction: column;
+    }
+    .cabecalho-principal ul li{
+        padding: 15px 30px;          
+    }    
+    .cabecalho-principal ul li a i{
+        font-size: 24px;
+    }
 }
