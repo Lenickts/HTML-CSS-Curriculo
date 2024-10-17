@@ -1,4 +1,5 @@
-/* LOCAL RESERVADO PARA IMPORTAR FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Mako&family=Telex&display=swap');
+/* Fontes: Telex / Mako / Inconsolata  */
 
 *{
     margin: 0;
@@ -16,11 +17,13 @@
 .cabecalho-principal ul{
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
     font-size: 25px;
 }
 .cabecalho-principal a{
+    font-family: "Telex", serif;
+    font-weight: 400;
     color: white;
 }
 
@@ -42,6 +45,7 @@
     border-radius: 7px;
     width: 50%;
     background: rgba(237, 232, 232, 0.8);
+    
 }
 /* FIM SEÇÕES PRINCIPAIS */
                     
@@ -58,10 +62,14 @@
     padding: 20px 0 7px;
 }
 #nomeCompleto{
-    margin-left: 3rem;
-    padding: 1rem;
+    margin-left: 4rem;
+    padding-top: 1rem;
 }
 .formacao,.experiencia,.item-dados-pessoais{
     margin-left: 3rem;
     padding: 1rem;
+}
+p{
+    font-family: "Mako", serif;
+    font-weight: 400;
 }
