@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,61,64,1) 35%, rgba(152,160,162,1) 100%);
+    gap: 20px;
+}
+.dados-pessoais{
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+.experiencia-principal{
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+.experiencia{
+    padding: 10px;
+}
