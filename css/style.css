@@ -59,9 +59,11 @@
 .categorias{
     text-align: center;
     font-size: 25px;
+    font-family: "Telex", serif;
     padding: 20px 0 7px;
 }
 #nomeCompleto{
+    font-family: "Telex", serif;
     margin-left: 4rem;
     padding-top: 1rem;
 }
@@ -69,7 +71,16 @@
     margin-left: 3rem;
     padding: 1rem;
 }
-p{
+p, h5{
     font-family: "Mako", serif;
     font-weight: 400;
+}
+h5{
+    font-weight: 700;
+    font-size: 15px;
+    padding-top: 5px;   
+}
+#email{
+    font-family: "Inconsolata", monospace;
+    font-style: italic;
 }
