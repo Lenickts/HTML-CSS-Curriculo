@@ -2,23 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* HEADER */
+.cabecalho-principal{
+    display: flex;
+    justify-content: end;   
+    background: linear-gradient(90deg, rgb(146, 146, 148) 0%, rgb(89, 90, 91) 35%, rgba(152,160,162,1) 100%);
+}
+.cabecalho-principal ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-size: 25px;
+    
+}
+
+/* MAIN */
+body{
+    background: black;
 }
 .principal{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-height: 100vh;
+    padding: 20px 0 20px 0 ;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,61,64,1) 35%, rgba(152,160,162,1) 100%);
     gap: 20px;
 }
-.dados-pessoais{
+
+/* SEÇÕES PRINCIPAIS */
+.dados-pessoais,.formacao-principal,.experiencia-principal{
     border: 1px solid #ffffff;
     padding: 10px;
 }
-.experiencia-principal{
-    border: 1px solid #ffffff;
+/* FIM SEÇÕES PRINCIPAIS */
+                    
+/* DIVS SEÇÕES */
+.experiencia, .formacao{
     padding: 10px;
 }
-.experiencia{
-    padding: 10px;
-}
+/* FIM DIVS SEÇÕES */
