@@ -8,6 +8,12 @@
     text-decoration: none;
 }
 
+:root{
+    --primary-color: #3c3e3f;
+    --secondary-color: #a2a7aa;
+    --text-color: white;
+    --background-color: #34495e;
+}
 /* HEADER */
 .cabecalho-principal{
     display: flex;
@@ -24,10 +30,25 @@
 .cabecalho-principal a{
     font-family: "Telex", serif;
     font-weight: 400;
-    color: white;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.cabecalho-principal ul li:hover{
+    transform: translateX(5px) rotate(-5deg);
+}
+.cabecalho-principal ul li a{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.cabecalho-principal ul li a i:hover{
+    transform: translateX(-5px) rotate(5deg);
 }
 
 /* MAIN */
+body{
+    background: linear-gradient(90deg, rgb(146, 146, 148) 0%, rgb(89, 90, 91) 35%, rgba(152,160,162,1) 100%);
+}
 .principal{
     display: flex;
     flex-direction: column;
@@ -83,4 +104,63 @@ h5{
 #email{
     font-family: "Inconsolata", monospace;
     font-style: italic;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 300px) and (max-width: 800px){
+    .cabecalho-principal{
+        position: fixed;
+        right: -500px;
+        top: 0;
+        width: 500px;
+        height: 100%;
+        background-color: var(--background-color);
+        z-index: 2;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .cabecalho-principal.ativo{
+        right: 0;
+    }
+    .cabecalho-principal ul{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 60px; /*REVER ESSA CONFIG*/
+        flex-direction: column;
+    }
+    .cabecalho-principal ul li{
+        padding: 15px 30px;          
+    }    
+    .cabecalho-principal ul li a i{
+        font-size: 24px;
+    }
+    .botao-menu{
+        background-color: var(--primary-color);
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 3;
+        border-radius: 5px;
+        font-size: 25px;
+        border: none;
+        padding: 10px 15px;
+        color: var(--text-color);
+    }
+    .botao-menu:hover{
+        background-color: var(--secondary-color);
+    }
+    .botao-menu.ativo{
+        right: 300px;
+    }
+    .dados-pessoais{
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 801px){
+    .botao-menu{
+        visibility: hidden;
+    }
+    .cabecalho-principal ul li{
+        cursor: pointer;
+    }
 }
