@@ -61,19 +61,51 @@ body{
 }
 
 /* SEÇÕES PRINCIPAIS */
-.dados-pessoais,.formacao-principal,.experiencia-principal{
+.dados-pessoais,.formacao-principal,.experiencia-principal,.skills-principal{
     /* border: 1px solid #ffffff; */
     border-radius: 7px;
     width: 50%;
+    padding: 0 0 5rem ;
     background: rgba(237, 232, 232, 0.8);
     
 }
 /* FIM SEÇÕES PRINCIPAIS */
-                    
+                 
 /* DIVS SEÇÕES */
 .experiencia, .formacao{
     padding: 15px;
 }
+.skills{
+    display: flex;
+    margin-left: 3rem;
+    justify-content: center;
+    gap: 80px;
+}
+.skills-itens{
+    justify-content: center;
+}
+.skills-itens ul{
+    margin-left: 0.8rem;
+}
+.contato{
+    display: flex;
+    /* align-items: center; */
+}
+#contato-texto{
+    /* align-items: flex-start; */
+    justify-content: flex-start;
+    background-color: #34495e;
+}
+#contato-map{
+    order: 1;
+    /* align-items: flex-end; */
+    justify-content: flex-end ;
+}
+#contato-map iframe{
+    width: 370px;
+    height: 370px;
+}
+
 /* FIM DIVS SEÇÕES */
 
 /* TEXTOS */
@@ -81,14 +113,16 @@ body{
     text-align: center;
     font-size: 25px;
     font-family: "Telex", serif;
-    padding: 20px 0 7px;
+    padding: 20px 0 10px;
+    margin: 0 0 30px;
+    background-color: var(--background-color);
 }
 #nomeCompleto{
     font-family: "Telex", serif;
     margin-left: 4rem;
     padding-top: 1rem;
 }
-.formacao,.experiencia,.item-dados-pessoais{
+.formacao,.experiencia,.item-dados-pessoais, .contato{
     margin-left: 3rem;
     padding: 1rem;
 }
@@ -98,6 +132,9 @@ h2{
 p, h5,li{
     font-family: "Mako", serif;
     font-weight: 400;
+}
+h3{
+    font-family: "Telex", serif;
 }
 h5{
     font-weight: 700;
@@ -164,7 +201,7 @@ ul{
     }
     /* FIM CONFIGURAÇÃO MENU */
     
-    .dados-pessoais,.formacao-principal,.experiencia-principal{
+    .dados-pessoais,.formacao-principal,.experiencia-principal,.skills-principal{
         width: 80%;        
     }
     .formacao,.experiencia{
