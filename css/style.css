@@ -9,7 +9,7 @@
 }
 
 :root{
-    --primary-color: #3498db;
+    --primary-color: #3c3e3f;
     --secondary-color: #a2a7aa;
     --text-color: white;
     --background-color: #34495e;
@@ -46,6 +46,9 @@
 }
 
 /* MAIN */
+body{
+    background: linear-gradient(90deg, rgb(146, 146, 148) 0%, rgb(89, 90, 91) 35%, rgba(152,160,162,1) 100%);
+}
 .principal{
     display: flex;
     flex-direction: column;
@@ -112,7 +115,7 @@ h5{
         width: 500px;
         height: 100%;
         background-color: var(--background-color);
-        z-index: 99;
+        z-index: 2;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
     .cabecalho-principal.ativo{
@@ -129,5 +132,27 @@ h5{
     }    
     .cabecalho-principal ul li a i{
         font-size: 24px;
+    }
+    .botao-menu{
+        background-color: var(--primary-color);
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 3;
+        border-radius: 5px;
+        font-size: 25px;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer; /*para mudar o cursor*/
+        color: var(--text-color);
+    }
+    .botao-menu:hover{
+        background-color: var(--secondary-color);
+    }
+    .botao-menu.ativo{
+        right: 300px;
+    }
+    .dados-pessoais{
+        margin-top: 70px;
     }
 }
