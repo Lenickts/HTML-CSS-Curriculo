@@ -92,7 +92,10 @@ body{
     margin-left: 3rem;
     padding: 1rem;
 }
-p, h5{
+h2{
+    font-family: "Telex", serif;
+}
+p, h5,li{
     font-family: "Mako", serif;
     font-weight: 400;
 }
@@ -100,6 +103,10 @@ h5{
     font-weight: 700;
     font-size: 15px;
     padding-top: 5px;   
+}
+ul{
+    list-style-type: circle;
+    margin-left: 4rem;
 }
 #email{
     font-family: "Inconsolata", monospace;
@@ -156,6 +163,23 @@ h5{
         margin-top: 70px;
     }
     /* FIM CONFIGURAÇÃO MENU */
+    
+    .dados-pessoais,.formacao-principal,.experiencia-principal{
+        width: 80%;        
+    }
+    .formacao,.experiencia{
+        margin-left: 1rem;
+    }
+    .experiencia-principal ul{
+        margin-left: 3rem;
+    }
+    .categorias{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    
 }
 
 @media (min-width: 801px){
