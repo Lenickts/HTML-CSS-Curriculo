@@ -228,7 +228,6 @@ ul{
     }
     
 }
-
 @media (min-width: 801px){
     .botao-menu{
         visibility: hidden;
@@ -236,4 +235,32 @@ ul{
     .cabecalho-principal ul li{
         cursor: pointer;
     }
+}
+
+/* FOOTER  */
+.rodape{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+    font-family: "Telex", serif;
+}
+.redes-sociais{
+    display: flex;
+    font-size: 30px;
+    gap: 15px;
+    justify-content: center;
+}
+.redes-sociais a i{
+    color: var(--text-color);
+}
+.redes-sociais a:hover{
+    transform: translateX(-5px) rotate(5deg);
+}
+.rodape p{
+    font-family: "Inconsolata", monospace;
+    font-size: 15px;
+    border-top: 0.4px solid var(--secondary-color);
+    margin-top: 10px;
+    padding-top:5px ;
 }
